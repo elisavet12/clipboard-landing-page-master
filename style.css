@@ -7,4 +7,89 @@
 
 body {
   font-family: "Bai Jamjuree";
+  font-size: 18px;
+  margin: 0px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  max-width: 1440px;
+  align-content: center;
+}
+
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+main {
+  padding: 0px 164px;
+}
+
+.excerpt {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+
+.history {
+  text-align: center;
+  padding: 68px 0px 140px 0px;
+}
+
+.history-title {
+  font-size: 46px;
+  font-weight: 600;
+  margin: 0px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.history-excerpt {
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.button {
+  font-size: 19px;
+  color: white;
+  width: 226px;
+  height: 54px;
+  border-radius: 26px;
+  border: none;
+}
+
+.button-ios {
+  background-color: var(--Strong-Cyan);
+}
+
+.button-mac {
+  background-color: var(--Light-Blue);
+}
+
+.snippets-properties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 110px;
+  grid-template-areas:
+    snippets-image box-2
+    snippets-image box-3
+    snippets-image box-4;
+}
+
+.box2 {
+  grid-area: box2;
+}
+.box1 {
+  grid-area: box1;
+}
+.box3 {
+  grid-area: box3;
+}
+.box3- {
+  grid-area: box3-;
 }
