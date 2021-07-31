@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   max-width: 1440px;
   align-content: center;
+  box-sizing: border-box;
 }
 
 header {
@@ -34,6 +35,31 @@ main {
   font-size: 20px;
   font-weight: 400;
   color: var(--Grayish-Blue);
+  max-width: 60ch;
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  margin: 0px;
+}
+
+.property-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.property-excerpt {
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+  margin: 0px;
+  margin-bottom: 64px;
+  width: 34ch;
 }
 
 .history {
@@ -49,8 +75,6 @@ main {
 }
 
 .history-excerpt {
-  margin-top: 24px;
-  margin-bottom: 46px;
 }
 
 .button {
@@ -70,26 +94,78 @@ main {
   background-color: var(--Light-Blue);
 }
 
-.snippets-properties {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 110px;
-  grid-template-areas:
-    snippets-image box-2
-    snippets-image box-3
-    snippets-image box-4;
+.snippets {
+  text-align: center;
+  padding: 0px 0px 140px 0px;
 }
 
-.box2 {
-  grid-area: box2;
+.snippets-properties {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6em;
+  text-align: left;
+  padding: 76px 0px;
 }
-.box1 {
-  grid-area: box1;
+
+.snippets-image {
+  height: 571px;
+  width: 720px;
+  text-align: left;
+  margin-left: -192px;
 }
-.box3 {
-  grid-area: box3;
+
+.property-title {
+  padding: 20px 0px;
+  margin: 0px;
 }
-.box3- {
-  grid-area: box3-;
+
+.access {
+  text-align: center;
+  padding: 0px 0px 140px 0px;
+}
+
+.access-image {
+  padding-top: 115px;
+}
+
+.workflow {
+  text-align: center;
+  padding: 0px 0px 140px 0px;
+}
+
+.workflow-properties {
+  display: flex;
+  padding: 78px 0px 200px 0px;
+}
+
+.workflow-excerpt {
+  margin: 0px;
+}
+
+.workflow-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clipboard {
+  text-align: center;
+  padding: 0px 0px 140px 0px;
+}
+
+.clipboard-excerpt {
+}
+
+footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--Grayish-Blue);
+}
+
+.footer-logo {
+  max-width: 56px;
+  width: 100%;
+  height: auto;
 }
